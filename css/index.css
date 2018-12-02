@@ -153,6 +153,7 @@ header .logo {
 	display: inline-block;
 	width: 50%;
 	height: 150px;
+	padding-right: 2px;
 }
 
 .middle-picture {
@@ -164,9 +165,11 @@ header .logo {
 
 .bottom-section .bottom-content {
 	margin-top: 20px;
+	padding-right: 2px;
 	display: inline-block;
 	width: 33.33%;
 	height: 150px;
+	align-content: left;
 }
 
 footer .copyright {
