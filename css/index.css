@@ -63,97 +63,113 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Your code starts here! */
-body{
-	width:900px;
-	margin: auto;
+body {
+	width: 876px;
+	margin: 0 auto;
 }
+
 h1 {
 	font-size: 60px;
 }
 
+hr {
+	color: darkblack;	
+}
+
 header {
 	position: relative;
-	display: inline-block;
 	width: 100%;
-	height: 40px;
-	margin-top: 5px;
+	height: 80px;
 }
 
-nav a {
-	position: relative;
-	top: 0px;
-	padding-right: 10px;
-	text-decoration: none;
-}
-
-nav a:first-child {
-	margin-left: 20px;
-}
-
-.logo {
+header nav {
+	display: inline-block;
 	position: absolute;
-	right: 20px;
-	top: 0px;
+	top: 50%;
+	height: 190px;
 }
 
-/* main container */
-.main-section {
-	margin: auto;
-}
-
-.box1 {
+header nav a {
+	margin: 0px 50px 0 0;
+	text-decoration: none;
 	display: inline-block;
-	width: 50%;
-	height: 400px;
+	color: #DDDDDD;
+}
+
+header nav a:hover {
+	text-decoration: underline;
+}
+
+header .logo {
+	position: absolute;
+	right: 0;
+	top: 20px;
+}
+
+.main-content {
 	text-align: center;
-	padding-top: 100px;
+	position: relative;
+	height: 450px;
 }
 
-.box2 {
-	display: inline-block;
-	width: 50%;
-	float: right;
-	height: 400px;
-	padding-left: 15px;
+.main-content button {
+	font-size: 20px;
+	width: 150px;
+	background: white;
+	border: 1px solid black;
+	padding: 2%;
 }
 
-.box3 {
-	margin-top: 15px;
-	width: 50%;
-	float: left;
-	height: 100px;
-	padding-left: 15px;
-}
-.box4 {
-	margin-top: 15px;	
-	width: 50%;
-	float: right;
-	height: 100px;
-	padding-left: 15px;
-}
-.image{
+.main-content .inner-content {
 	display: inline-block;
-	text-align: center;
+	width: 50%;
+	height: 300px;
+}
+
+.main-content .inner-text {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 450px;
+}
+
+.main-content .inner-picture {
+	position: absolute;
+	right: 0;
+	height: 450px;
+}
+
+.inner-text h1 {
+	padding-top: 50px;
+}
+
+.inner-picture img {
+	padding-top: 25px;
+	padding-right: 90px;
+	padding-bottom: 10px;
+}
+
+.middle-section .middle-content-top {
+	display: inline-block;
+	width: 50%;
+	height: 150px;
+}
+
+.middle-picture {
+	display: block;
 	width: 100%;
-	padding-top: 15px;
+	height: 182px;
+	text-align: center;
 }
-.column {
-    float: left;
-	width: 30%;
-	margin-bottom: 20px;
+
+.bottom-section .bottom-content {
 	margin-top: 20px;
-}
-.row:after {
-    display: table;
-    clear: both;
-}
-footer {
 	display: inline-block;
-	margin-top: 10px;
+	width: 33.33%;
+	height: 150px;
 }
-small {
-	text-align: center;
-}
-hr {
-	width: 100%;
+
+footer .copyright {
+	padding: 0 40%;
+	display: inline;
 }
